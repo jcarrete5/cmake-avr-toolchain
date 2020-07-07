@@ -370,7 +370,7 @@ function( add_avr_executable EXECUTABLE_NAME )
    add_custom_target(
       firmwaresize_${EXECUTABLE_NAME}.awk
       COMMAND
-        echo "BEGIN {ORS=\"\";print \"\\\\n\\\\033[1;33mFirmware size (\"}" > firmwaresize_${EXECUTABLE_NAME}.awk
+        echo "BEGIN {ORS=\"\";print \"\\n\\033[1;33mFirmware size (\"}" > firmwaresize_${EXECUTABLE_NAME}.awk
       COMMAND
         echo "/^Device/ {print \$2 \") is...  \"}" >> firmwaresize_${EXECUTABLE_NAME}.awk
       COMMAND
@@ -378,7 +378,7 @@ function( add_avr_executable EXECUTABLE_NAME )
       COMMAND
         echo "/^Data/ {print \"RAM\ (globals): \" \$2 \" \" \$3 \" \" \$4 \")  \"}" >> firmwaresize_${EXECUTABLE_NAME}.awk
       COMMAND
-        echo "END {print \"\\\\033[0m\\\\n\\\\n\"}" >> firmwaresize_${EXECUTABLE_NAME}.awk
+        echo "END {print \"\\033[0m\\n\\n\"}" >> firmwaresize_${EXECUTABLE_NAME}.awk
       VERBATIM
    )
 
