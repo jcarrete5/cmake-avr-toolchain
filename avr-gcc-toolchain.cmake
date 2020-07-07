@@ -63,8 +63,8 @@ find_program( AWK awk )
 ##########################################################################
 set( CMAKE_SYSTEM_NAME Generic )
 set( CMAKE_SYSTEM_PROCESSOR avr )
-set( CMAKE_C_COMPILER ${AVR_CC} )
-set( CMAKE_CXX_COMPILER ${AVR_CXX} )
+set( CMAKE_C_COMPILER ${AVR_CC} CACHE FILEPATH "AVR C Compiler" )
+set( CMAKE_CXX_COMPILER ${AVR_CXX} CACHE FILEPATH "AVR CXX Compiler" )
 
 
 ###########################################################################
