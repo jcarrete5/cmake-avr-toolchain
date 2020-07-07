@@ -19,6 +19,7 @@
 # SOFTWARE.
 #
 # Copyright (c) 2016 Igor Mikolic-Torreira
+# Modified work Copyright (c) 2020 Jason Carrete
 #
 # Inspired in part by cmake toolchains created by
 #   - Tomasz Bogdal (@queezythegreat on GitHub)
